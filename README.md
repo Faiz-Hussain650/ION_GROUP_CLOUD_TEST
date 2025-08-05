@@ -49,18 +49,18 @@ hello-k8s-demo/
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have:
 
 - A **Docker Hub** account
 - **Docker** (v20+) installed and logged in (`docker login`)
-- A running Kubernetes cluster and **kubectl** configured (e.g. Minikube, kind, GKE, EKS)
+- A running Kubernetes cluster and **kubectl** configured (e.g. Minikube, EKS)
 - Optional: **jq** CLI for inspecting JSON
 
 ---
 
-## 📦 1. Build & Publish Docker Images
+## 1. Build & Publish Docker Images
 
 > **Tip:** Replace `your-dockerhub-username` with your actual Docker Hub handle.
 
