@@ -22,14 +22,14 @@ We then deploy both services into a Kubernetes cluster using standard manifests:
 
 ```text
 hello-k8s-demo/
-├── frontend/         # Flask application
-│   ├── app.py        # Application logic
+├── frontend/         
+│   ├── app.py        
 │   ├── requirements.txt
 │   └── Dockerfile
-├── database/         # PostgreSQL initialization
-│   ├── init.sql      # Schema + seed data
+├── database/         
+│   ├── init.sql     
 │   └── Dockerfile
-└── k8s/              # Kubernetes YAML manifests
+└── k8s/              
     ├── namespace.yaml
     ├── postgres-secret.yaml
     ├── postgres-deployment.yaml
