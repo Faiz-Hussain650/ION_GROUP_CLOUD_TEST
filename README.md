@@ -4,7 +4,7 @@ Welcome to the **Hello World Kubernetes Demo**! This repository contains a minim
 
 ---
 
-## 🚀 Overview
+## Overview
 
 In this demo, we build two Docker images:
 
@@ -18,7 +18,7 @@ We then deploy both services into a Kubernetes cluster using standard manifests:
 
 ---
 
-## 🗂️ Project Layout
+## Project Layout
 
 ```text
 hello-k8s-demo/
@@ -40,7 +40,7 @@ hello-k8s-demo/
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 - **Python 3.9** & **Flask** for the web server
 - **PostgreSQL 13** database
@@ -56,17 +56,16 @@ Before you begin, ensure you have:
 - A **Docker Hub** account
 - **Docker** (v20+) installed and logged in (`docker login`)
 - A running Kubernetes cluster and **kubectl** configured (e.g. Minikube, EKS)
-- Optional: **jq** CLI for inspecting JSON
 
 ---
 
 ## 1. Build & Publish Docker Images
 
-> **Tip:** Replace `your-dockerhub-username` with your actual Docker Hub handle.
+> Replace `your-dockerhub-username` with your actual Docker Hub handle.
 
 ```bash
 # From project root
-export DOCKERHUB_USERNAME=your-dockerhub-username
+export DOCKERHUB_USERNAME=<your-dockerhub-username>
 
 # Build & push frontend
 cd frontend
@@ -81,7 +80,7 @@ docker push $DOCKERHUB_USERNAME/hello-postgres:latest
 
 ---
 
-## 🔧 2. Deploy to Kubernetes
+## 2. Deploy to Kubernetes
 
 1. **Create Namespace**
    ```bash
@@ -107,7 +106,7 @@ docker push $DOCKERHUB_USERNAME/hello-postgres:latest
 
 ---
 
-## 🔍 3. Verify & Access
+## 3. Verify & Access
 
 1. **Check resource status**
    ```bash
@@ -132,9 +131,9 @@ hello world, Your Name
 ```
 ---
 
-## 📚 References & Acknowledgments
+## References & Acknowledgments
 
-This demo leverages concepts and code inspired by several authoritative sources:
+This demo leverages concepts and code refered from these official documentations:
 
 - **Flask Quickstart**: Official Flask tutorial for creating minimal web applications.  
   https://flask.palletsprojects.com/en/2.2.x/quickstart/
@@ -149,9 +148,4 @@ This demo leverages concepts and code inspired by several authoritative sources:
 
 These resources guided the structure and configuration of this project.
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
